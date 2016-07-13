@@ -1,0 +1,839 @@
+@charset "UTF-8";
+/* line 2, conmon.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; }
+
+/* line 7, conmon.scss */
+body, html {
+  width: 100%;
+  height: 100%; }
+
+/*------------标题------------*/
+/*------------平和质------------*/
+/*-----标题---*/
+/*----矩形里的字---*/
+/*----图片下的的字---*/
+/*------------基本信息------------*/
+/*---按钮里字的颜色----*/
+/*---你感觉的大字--*/
+/* line 3, index.scss */
+.content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/* line 8, index.scss */
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/* line 13, index.scss */
+li {
+  list-style: none; }
+
+/* line 16, index.scss */
+a {
+  text-decoration: none; }
+
+/* line 19, index.scss */
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+/* line 23, index.scss */
+.header {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  background: #fff; }
+  /* line 28, index.scss */
+  .header h1 {
+    line-height: 45px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal; }
+  /* line 34, index.scss */
+  .header a {
+    font-size: 0;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    left: 10px; }
+    /* line 41, index.scss */
+    .header a:after {
+      content: "";
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      border-right: 2px solid #999999;
+      border-top: 2px solid #999999;
+      -webkit-transform: rotateZ(-135deg); }
+
+/* line 52, index.scss */
+.main {
+  -webkit-flex-grow: 1;
+  background: #f6514b;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+/*----------------------小鲜智造------------------------*/
+/* line 59, index.scss */
+.article {
+  width: 100%;
+  -webkit-flex-grow: 1;
+  background: url(../img/2222.png) no-repeat;
+  background-size: 100% 100%; }
+  /* line 64, index.scss */
+  .article a {
+    width: 100%;
+    position: absolute;
+    bottom: 13%;
+    left: 47%;
+    font-size: 20px;
+    color: #c65726;
+    font-weight: 700; }
+  /* line 73, index.scss */
+  .article p {
+    font-size: 4px;
+    text-align: center;
+    position: absolute;
+    bottom: 1%;
+    width: 100%; }
+
+/*----------------------性别------------------------*/
+/* line 82, index.scss */
+.second {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  background: url("../img/img1.png") no-repeat; }
+  /* line 90, index.scss */
+  .second .c-section {
+    width: 100%;
+    height: 100%;
+    padding-top: 35px; }
+  /* line 95, index.scss */
+  .second .c-small {
+    width: 100%;
+    height: 100%;
+    background: url("../img/1.png") 10% 10% no-repeat;
+    position: relative;
+    background-size: 95% 90%; }
+  /* line 104, index.scss */
+  .second .c-h3 {
+    color: #C4412F;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px; }
+  /* line 113, index.scss */
+  .second .c-pic {
+    width: 100%;
+    height: 180px;
+    position: relative; }
+    /* line 117, index.scss */
+    .second .c-pic .img {
+      width: 80%;
+      height: 180px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      padding-top: 30px; }
+      /* line 127, index.scss */
+      .second .c-pic .img img {
+        width: 30%;
+        height: 80%;
+        margin: 20px 8%; }
+      /* line 132, index.scss */
+      .second .c-pic .img span {
+        position: absolute;
+        width: 1px;
+        height: 80%;
+        border-right: 1px solid #000;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        top: 50px; }
+  /* line 146, index.scss */
+  .second .c-xz {
+    width: 100%;
+    height: 60px;
+    display: -webkit-flex;
+    text-align: center;
+    margin-top: 20px; }
+    /* line 152, index.scss */
+    .second .c-xz .c-xz-n {
+      -webkit-flex-grow: 1;
+      position: relative;
+      text-align: center; }
+      /* line 157, index.scss */
+      .second .c-xz .c-xz-n label {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        position: absolute;
+        left: 44%;
+        top: 27px; }
+      /* line 166, index.scss */
+      .second .c-xz .c-xz-n h4 {
+        font-size: 16px;
+        font-weight: 100; }
+      /* line 170, index.scss */
+      .second .c-xz .c-xz-n input {
+        margin-top: 13px;
+        opacity: 0; }
+        /* line 173, index.scss */
+        .second .c-xz .c-xz-n input:checked + label {
+          background: url("../img/img.png") no-repeat;
+          background-position: 3px; }
+      /* line 180, index.scss */
+      .second .c-xz .c-xz-n label {
+        display: block; }
+  /* line 185, index.scss */
+  .second .c-go {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin: 0 auto; }
+    /* line 190, index.scss */
+    .second .c-go .btn {
+      width: 26%;
+      height: 44px;
+      background: url("../img/img8.png") 10% 10% no-repeat;
+      background-size: 100% 100%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      text-align: center;
+      color: #b00600;
+      line-height: 39px;
+      font-weight: 700; }
+      /* line 203, index.scss */
+      .second .c-go .btn a {
+        color: #c65726;
+        font-weight: 700; }
+
+/*------------------有无病史-----------------*/
+/* line 212, index.scss */
+.three .header {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  /* line 219, index.scss */
+  .three .header img {
+    width: 17px;
+    height: auto;
+    float: left;
+    -webkit-transform: rotate(90deg);
+    margin-top: 14px;
+    margin-left: 3%;
+    float: left; }
+  /* line 228, index.scss */
+  .three .header h2 {
+    font-size: 16px;
+    color: #333333;
+    line-height: 45px;
+    padding-left: 40%; }
+/* line 236, index.scss */
+.three .section {
+  width: 100%;
+  height: 100%;
+  padding-top: 44px;
+  background: url("../img/img1.png") no-repeat;
+  background-size: 100% 100%; }
+/* line 243, index.scss */
+.three .smallbox {
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 5%;
+  background: url("../img/1.png") 20% 30% no-repeat;
+  background-size: 90% 80%;
+  position: relative; }
+  /* line 251, index.scss */
+  .three .smallbox h2 {
+    font-size: 18px;
+    color: #B00600;
+    text-align: center;
+    padding-top: 33px;
+    padding-bottom: 33px; }
+/* line 259, index.scss */
+.three .list {
+  width: 100%; }
+  /* line 262, index.scss */
+  .three .list .list_1 {
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 3%;
+    height: auto; }
+    /* line 267, index.scss */
+    .three .list .list_1 ul {
+      width: 100%;
+      height: auto; }
+      /* line 270, index.scss */
+      .three .list .list_1 ul li {
+        list-style: none;
+        font-size: 11px;
+        color: #666666;
+        border: 1px solid #666666;
+        border-radius: 3px;
+        line-height: 20px;
+        text-align: center;
+        float: left;
+        width: 30%;
+        height: 20px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-left: 2%; }
+      /* line 285, index.scss */
+      .three .list .list_1 ul .bg {
+        background: #F6514B;
+        color: #fff;
+        border: none; }
+/* line 294, index.scss */
+.three .jixu {
+  width: 110px;
+  height: 38px;
+  position: absolute;
+  right: 33%;
+  bottom: 25%;
+  background: url("../img/img8.png") no-repeat; }
+  /* line 301, index.scss */
+  .three .jixu a {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 12px;
+    color: #c65726;
+    font-weight: 700; }
+/* line 311, index.scss */
+.three .pan {
+  width: 100%;
+  height: 45px; }
+/* line 315, index.scss */
+.three .sort {
+  display: inline-block;
+  padding-left: 30px;
+  line-height: 25px;
+  width: 80px;
+  height: 25px;
+  margin-left: 15%;
+  position: relative;
+  margin-top: 10px; }
+  /* line 324, index.scss */
+  .three .sort input[name] {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 2;
+    opacity: 0; }
+    /* line 329, index.scss */
+    .three .sort input[name]:checked + lable {
+      background-position: 2px 2px; }
+  /* line 334, index.scss */
+  .three .sort lable {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background: url(../img/2.png) no-repeat 3px -20px;
+    background-size: 50% 50%;
+    width: 25px;
+    height: 25px;
+    z-index: 1; }
+    /* line 343, index.scss */
+    .three .sort lable img {
+      width: 17px;
+      height: 17px; }
+
+/*----------------------有无过敏食物------------------------*/
+/*------------------------不喜欢吃的食物--------------------*/
+/* line 354, index.scss */
+.five .section2 {
+  -webkit-flex-grow: 1;
+  padding-top: 44px;
+  background: url("../img/img1.png") no-repeat;
+  background-size: 100% 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+  /* line 361, index.scss */
+  .five .section2 .smallbox {
+    -webkit-flex-grow: 1;
+    padding-top: 10%;
+    padding-left: 5%;
+    background: url("../img/1.png") 20% 30% no-repeat;
+    background-size: 90% 80%;
+    position: relative; }
+    /* line 368, index.scss */
+    .five .section2 .smallbox h2 {
+      font-size: 16px;
+      color: #B00600;
+      width: 100%;
+      text-align: center;
+      padding-top: 29px; }
+    /* line 375, index.scss */
+    .five .section2 .smallbox ul {
+      width: 70%;
+      margin-top: 19px;
+      height: 198px;
+      margin-left: 10%;
+      				/*li{
+      					width:50%;
+      					float:left;
+      					text-align:center;
+      					.inp{
+      						color:$title_color;
+      						@include pos(relative);
+      						label{
+      							@include pos();
+      							left:55px;
+      							top:13px;
+      							width:12px;
+      							height:12px;
+      							border:1px solid #000;
+      						}
+      						.bg{
+      							background:url('../img/img.png') no-repeat;
+      							background-position:1px;
+      
+      						}
+      						input{
+      							opacity: 0;
+      							z-index:9;
+      							&:checked+label{
+      								background:url('../img/img.png') no-repeat center;
+      							}
+      						}
+      						span{
+      							height:40px;
+      							line-height:40px;
+      
+      						}
+      					}
+      				}*/ }
+      /* line 380, index.scss */
+      .five .section2 .smallbox ul li {
+        list-style: none;
+        font-size: 11px;
+        color: #666666;
+        border: 1px solid #666666;
+        border-radius: 3px;
+        line-height: 20px;
+        text-align: center;
+        float: left;
+        width: 20%;
+        height: 20px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-left: 5%; }
+        /* line 394, index.scss */
+        .five .section2 .smallbox ul li.bg {
+          background: #F6514B;
+          color: #fff;
+          border: none; }
+    /* line 436, index.scss */
+    .five .section2 .smallbox .jixu {
+      width: 110px;
+      height: 38px;
+      position: absolute;
+      right: 33%;
+      bottom: 25%;
+      background: url("../img/img8.png") no-repeat; }
+      /* line 443, index.scss */
+      .five .section2 .smallbox .jixu span {
+        font-size: 16px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 12px;
+        color: #c65726;
+        font-weight: 700; }
+
+/*----------------------60道题------------------------*/
+/* line 457, index.scss */
+.six {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  background: #f6514b; }
+  /* line 463, index.scss */
+  .six .header {
+    height: 45px;
+    width: 100%;
+    background: #fff;
+    line-height: 45px; }
+    /* line 468, index.scss */
+    .six .header h1 {
+      width: 100%;
+      font-size: 16px;
+      text-align: center;
+      position: relative; }
+      /* line 473, index.scss */
+      .six .header h1 span {
+        position: absolute;
+        background: url(../img/03.jpg) no-repeat;
+        background-size: contain;
+        width: 20px;
+        left: 15px;
+        top: 14px;
+        display: inline-block;
+        height: 20px; }
+  /* line 485, index.scss */
+  .six .section {
+    width: 90%;
+    margin: 30px auto;
+    background: url(../img/pic11-1.png) no-repeat;
+    background-size: cover;
+    -webkit-flex-grow: 1;
+    overflow-y: auto;
+    height: 0; }
+    /* line 493, index.scss */
+    .six .section ul {
+      width: 95%;
+      margin: 20px auto;
+      padding-left: 10px; }
+      /* line 498, index.scss */
+      .six .section ul li {
+        line-height: 30px;
+        list-style: none; }
+      /* line 503, index.scss */
+      .six .section ul li:nth-of-type(2n-1) {
+        padding-top: 2px;
+        color: #454545;
+        font-size: 14px;
+        font-weight: 600; }
+        /* line 508, index.scss */
+        .six .section ul li:nth-of-type(2n-1) span {
+          width: 10px;
+          margin: 0 3px 0 0px;
+          height: 10px;
+          background: url(../img/pic12-1.png) no-repeat;
+          background-size: contain;
+          display: inline-block; }
+      /* line 517, index.scss */
+      .six .section ul li:nth-of-type(2n) {
+        color: #959180;
+        font-size: 12px; }
+        /* line 520, index.scss */
+        .six .section ul li:nth-of-type(2n) span {
+          border: 1px solid #959180;
+          margin: 0 6px;
+          padding: 3px 6px;
+          border-radius: 3px; }
+          /* line 525, index.scss */
+          .six .section ul li:nth-of-type(2n) span.on {
+            color: #fff;
+            background: #f6514b;
+            border: none; }
+    /* line 534, index.scss */
+    .six .section p {
+      width: 30%;
+      margin: 0 auto;
+      height: 32px;
+      background: url(../img/img8.png) no-repeat;
+      background-size: contain;
+      padding: 0 0 15px 15px;
+      line-height: 32px;
+      color: #fff; }
+  /* line 546, index.scss */
+  .six .jixu {
+    width: 110px;
+    height: 38px;
+    margin-left: 30%;
+    background: url("../img/img8.png") no-repeat; }
+    /* line 551, index.scss */
+    .six .jixu a {
+      font-size: 16px;
+      width: 100%;
+      display: block;
+      text-align: center;
+      padding-top: 12px;
+      color: #c65726;
+      font-weight: 700; }
+
+/*----------------------结果------------------------*/
+/* line 564, index.scss */
+.result-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+  /* line 569, index.scss */
+  .result-container .result-header {
+    height: 45px;
+    width: 100%;
+    background: #fff;
+    line-height: 45px; }
+    /* line 574, index.scss */
+    .result-container .result-header h1 {
+      width: 100%;
+      font-size: 16px;
+      text-align: center;
+      position: relative; }
+      /* line 579, index.scss */
+      .result-container .result-header h1 span {
+        position: absolute;
+        background: url(../img/03.jpg) no-repeat;
+        background-size: contain;
+        width: 20px;
+        left: 15px;
+        top: 15px;
+        display: inline-block;
+        height: 20px; }
+  /* line 592, index.scss */
+  .result-container .result-section {
+    width: 100%;
+    margin: 0px auto;
+    -webkit-flex-grow: 1;
+    overflow-y: auto; }
+    /* line 597, index.scss */
+    .result-container .result-section .hide-h {
+      width: 100%;
+      height: 60px;
+      display: none;
+      line-height: 60px;
+      background: #f6514b;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      font-size: 16px; }
+      /* line 607, index.scss */
+      .result-container .result-section .hide-h span {
+        width: 8px;
+        height: 8px;
+        border-bottom: 8px solid #fff;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        position: absolute;
+        bottom: -1px;
+        left: 48%; }
+      /* line 618, index.scss */
+      .result-container .result-section .hide-h .tab-btn {
+        width: 8px;
+        height: 8px;
+        border-top: 8px solid #fff;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        position: absolute;
+        bottom: -1px;
+        left: 48%; }
+    /* line 629, index.scss */
+    .result-container .result-section .show-h {
+      width: 100%;
+      background: #f6514b;
+      height: 80px;
+      color: #fff;
+      line-height: 20px;
+      padding: 20px 0 0 20px; }
+      /* line 636, index.scss */
+      .result-container .result-section .show-h span {
+        font-size: 16px; }
+      /* line 639, index.scss */
+      .result-container .result-section .show-h i {
+        background: url(../img/5.jpg) no-repeat;
+        background-size: contain;
+        width: 33px;
+        height: 33px;
+        display: inline-block;
+        float: right;
+        margin-top: -5px; }
+    /* line 650, index.scss */
+    .result-container .result-section .hide {
+      width: 100%;
+      display: none; }
+      /* line 653, index.scss */
+      .result-container .result-section .hide ol {
+        width: 90%;
+        padding-top: 10px;
+        margin: 0 auto; }
+        /* line 658, index.scss */
+        .result-container .result-section .hide ol li {
+          line-height: 25px;
+          font-size: 12px; }
+      /* line 663, index.scss */
+      .result-container .result-section .hide ul {
+        width: 90%;
+        margin: 10px auto; }
+        /* line 667, index.scss */
+        .result-container .result-section .hide ul li {
+          line-height: 25px;
+          font-size: 12px; }
+          /* line 670, index.scss */
+          .result-container .result-section .hide ul li span {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #000;
+            display: inline-block;
+            margin: 0 5px 0 0px; }
+        /* line 680, index.scss */
+        .result-container .result-section .hide ul li:nth-of-type(1) {
+          line-height: 30px;
+          font-size: 14px;
+          font-weight: 600; }
+          /* line 684, index.scss */
+          .result-container .result-section .hide ul li:nth-of-type(1) span {
+            width: 10px;
+            margin: 0 5px 0 0px;
+            height: 10px;
+            background: url(../img/pic12-1.png) no-repeat;
+            background-size: contain;
+            display: inline-block; }
+    /* line 696, index.scss */
+    .result-container .result-section .eat {
+      margin-top: 2px;
+      width: 100%;
+      overflow-y: auto;
+      background: #fbfbfb; }
+      /* line 701, index.scss */
+      .result-container .result-section .eat h6 {
+        height: 60px;
+        line-height: 60px;
+        color: #f6514b;
+        font-size: 16px;
+        padding: 0 20px;
+        border: 1px solid #eee; }
+        /* line 708, index.scss */
+        .result-container .result-section .eat h6 span {
+          background: url(../img/pic16-1.png) no-repeat;
+          background-size: contain;
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          float: right;
+          margin-top: 20px; }
+      /* line 718, index.scss */
+      .result-container .result-section .eat .pic {
+        width: 90%;
+        margin: 10px auto;
+        display: -webkit-flex;
+        display: none; }
+        /* line 723, index.scss */
+        .result-container .result-section .eat .pic dl {
+          -webkit-flex-grow: 1;
+          background: #fbfbfb;
+          margin-right: 2px;
+          color: #333; }
+          /* line 729, index.scss */
+          .result-container .result-section .eat .pic dl dt img {
+            width: 100%; }
+          /* line 733, index.scss */
+          .result-container .result-section .eat .pic dl dd {
+            text-align: center;
+            font-size: 12px; }
+
+/*--------弹出框-------*/
+/* line 745, index.scss */
+.dialog {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none; }
+  /* line 753, index.scss */
+  .dialog .box {
+    position: absolute;
+    background: white;
+    width: 80%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    /* line 763, index.scss */
+    .dialog .box .top {
+      height: 80%;
+      background: #FFF3BF;
+      line-height: 30px;
+      position: relative; }
+      /* line 768, index.scss */
+      .dialog .box .top span {
+        font-size: 0; }
+        /* line 770, index.scss */
+        .dialog .box .top span:nth-child(1) {
+          width: 120px;
+          height: 120px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          top: 40px;
+          background: url("../img/img2.png") no-repeat center;
+          background-size: 100%;
+          z-index: 1; }
+        /* line 782, index.scss */
+        .dialog .box .top span:nth-child(2) {
+          width: 120px;
+          height: 30px;
+          position: absolute;
+          left: 20px;
+          top: 40px;
+          background: url("../img/img9.png") no-repeat center;
+          background-size: 100%; }
+        /* line 791, index.scss */
+        .dialog .box .top span:nth-child(3) {
+          width: 80px;
+          height: 40px;
+          position: absolute;
+          right: 20px;
+          top: 80px;
+          background: url("../img/img10.png") no-repeat center;
+          background-size: 100%; }
+      /* line 801, index.scss */
+      .dialog .box .top h3 {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 0 30px;
+        bottom: 10px; }
+    /* line 812, index.scss */
+    .dialog .box p {
+      height: 20%;
+      background: #FAEAA4;
+      position: relative; }
+      /* line 816, index.scss */
+      .dialog .box p a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 50%;
+        height: 50px;
+        background: url("../img/img8.png") no-repeat;
+        background-size: 100%;
+        text-align: center;
+        line-height: 50px;
+        color: #B10A02;
+        font-size: 20px;
+        font-weight: bold;
+        color: #c65726;
+        font-weight: 700; }
+
+/*# sourceMappingURL=index.css.map */

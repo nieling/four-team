@@ -1,0 +1,41 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+}
+body,html{
+	width:100%;
+	height:100%;
+}
+@mixin flex(){
+	display:-webkit-flex;
+}
+@mixin flexto($num){
+	-webkit-flex-grow:$num;
+}
+@mixin verticle(){
+	-webkit-flex-direction:column;
+}
+@mixin pos($pos:absolute){
+	position:$pos;
+}
+/*------------标题------------*/
+
+$title_color:#333333;
+
+/*------------平和质------------*/
+$h-big:#454545;/*-----标题---*/
+$h-small:#666666;/*----矩形里的字---*/
+$dl_color:#333333;/*----图片下的的字---*/
+$background-color:#F6514B;
+
+
+
+/*------------基本信息------------*/
+/*---按钮里字的颜色----*/
+$h_color:#B00600;
+/*---你感觉的大字--*/
+$bigtext_color:#454545;
+$smalltext_color:#8C897C;
+

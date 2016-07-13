@@ -1,0 +1,837 @@
+@charset "UTF-8";
+@import "conmon";
+.content{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.container{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.container{
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+}
+.header{
+	height:50px;
+	width:100%;
+	@include pos(relative);
+	background:#fff;
+	h1{
+		line-height:45px;
+		text-align:center;
+		font-size:20px;
+		font-weight:normal;
+	}
+	a{
+		font-size:0;
+		@include pos();
+		width:12px;
+		height:12px;
+		top:10px;
+		left:10px;
+		&:after{
+			content:"";
+			width:12px;
+			height:12px;
+			display:inline-block;
+			border-right:2px solid #999999;
+			border-top:2px solid #999999;
+			-webkit-transform:rotateZ(-135deg);
+		}
+	}
+}
+.main{
+	-webkit-flex-grow:1;
+	background:#f6514b;
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+}
+/*----------------------小鲜智造------------------------*/
+.article{
+	width:100%;
+	@include flexto(1);
+	background:url(../img/2222.png) no-repeat;
+	background-size:100% 100%;
+	a{
+		width:100%;
+		@include pos();
+		bottom:13%;
+		left:47%;
+		font-size:20px;
+		color:#c65726;
+		font-weight:700;
+	}
+	p{
+		font-size:4px;
+		text-align:center;
+		@include pos();
+		bottom:1%;
+		width:100%;
+	}
+}
+/*----------------------性别------------------------*/
+.second{
+	@include flex;
+	@include verticle;
+	width:100%;
+	height:100%;
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+	background:url("../img/img1.png") no-repeat;
+	.c-section{
+		width:100%;
+		height:100%;
+		padding-top:35px;
+	}
+	.c-small{
+		width:100%;
+		height:100%;
+		background:url("../img/1.png") 10% 10% no-repeat;
+		//padding-top:10%;
+		//padding-left:5%;	
+		position:relative;
+		background-size:95% 90%;
+	}
+	.c-h3{
+	       color:#C4412F;
+	       font-size:18px;
+	       text-align:center;
+		   padding-top:20px;
+		   width:100%;
+		   height:40px;
+		   line-height:40px;
+	}
+	.c-pic{
+		width:100%;
+		height:180px;
+		position:relative;
+		.img{
+			width:80%;
+			height:180px;
+			position:absolute;
+			left:0;
+			top:0;
+			right:0;
+			bottom:0;
+			margin:auto;
+			padding-top:30px;
+			img{
+				width:30%;
+				height:80%;
+				margin:20px 8%;
+			}
+			span{
+				position:absolute;
+				width:1px;
+				height:80%;
+				border-right:1px solid #000;
+				left:0;
+				top:0;
+				right:0;
+				bottom:0;
+				margin:auto;
+				top:50px;
+			}
+		}	
+	}
+	.c-xz{
+		width:100%;
+		height:60px;
+		display:-webkit-flex;
+		text-align:center;
+		margin-top:20px;
+		.c-xz-n{
+	        -webkit-flex-grow:1;
+	        //padding-left:30%;
+	        position:relative;
+	        text-align:center;
+	        label{
+	        	width:20px;
+	        	height:20px;
+	        	border:1px solid #000;
+	        	border-radius:10px;
+	        	position:absolute;
+				left:44%;
+				top:27px;
+	        }
+	        h4{
+	        	font-size:16px;
+	        	font-weight:100;
+	        }
+	        input{
+	        	margin-top:13px;
+	        	opacity:0; 
+	        	&:checked+label{
+	        		background:url('../img/img.png') no-repeat;
+	        		background-position:3px;
+	        	}
+	        	
+	        }
+	        
+	       label{
+	       	   display:block;
+	       }
+		}	
+	}
+	.c-go{
+		width:100%;
+		height:10%;	
+		text-align:center;
+		margin:0 auto;
+		.btn{
+			width:26%;
+			height:44px;
+			background:url("../img/img8.png") 10% 10% no-repeat;
+			background-size:100% 100%;
+			display:block;
+			margin:0 auto;
+			margin-top:20px;
+			text-align:center;
+			color:#b00600;
+			line-height:39px;
+			font-weight:700;
+			
+			a{
+				color:#c65726;
+				font-weight:700;
+			}
+		}
+	}
+}
+/*------------------有无病史-----------------*/
+.three{
+	.header{
+		width:100%;
+		height:45px;
+		background:#fff;
+		position:fixed;
+		top:0;
+		left:0;
+		img{
+			width:17px;
+			height:auto;
+			float:left;
+			-webkit-transform:rotate(90deg);
+			margin-top:14px;
+			margin-left:3%;
+			float:left;
+		}
+		h2{
+			font-size:16px;
+			color:#333333;
+			line-height:45px;
+			padding-left:40%;
+
+		}
+	}
+	.section{
+		width:100%;
+		height:100%;
+		padding-top:44px;
+		background:url("../img/img1.png") no-repeat;
+		background-size:100% 100%;
+	}
+	.smallbox{
+		width:100%;
+		height:100%;
+		padding-top:10%;
+		padding-left:5%;
+		background:url("../img/1.png") 20% 30% no-repeat;
+		background-size:90% 80%;
+		position:relative;
+		h2{
+			font-size:18px;
+			color:$h_color;
+			text-align:center;
+			padding-top:33px;
+			padding-bottom:33px;
+		}
+	}
+	.list{
+		width:100%;	
+
+		.list_1{		
+			width:75%;
+			margin-left:10%;
+			margin-top:3%;
+			height:auto;
+			ul{
+				width:100%;
+				height:auto;
+				li{
+					list-style:none;		
+					font-size:11px;
+					color:$h-small;
+					border:1px solid #666666;
+					border-radius:3px;				
+					line-height:20px;
+					text-align:center;
+					float:left;
+					width:30%;
+					height:20px;
+					margin-bottom:5%;
+					margin-top:5%;
+					margin-left:2%;
+				}
+			.bg{
+						background:#F6514B;
+						color:#fff;
+						border:none;
+				}
+			}
+		}
+		
+	}
+	.jixu{
+		width:110px;
+		height:38px;
+		position:absolute;
+		right:33%;
+		bottom:25%;
+		background:url("../img/img8.png") no-repeat;
+		a{
+			display:block;
+			width:100%;
+			font-size:16px;
+			text-align:center;
+			padding-top:12px;
+			color:#c65726;
+			font-weight:700;
+		}
+	}
+	.pan{
+		width:100%;
+		height:45px;
+	}
+	.sort{
+		display:inline-block;
+		padding-left:30px;
+		line-height:25px;
+		width:80px;
+		height:25px;
+		margin-left:15%;
+		position:relative;
+		margin-top:10px;
+		input[name]{
+			position:absolute;
+			left:0;
+			top:0px;
+			z-index:2;
+			&:checked+lable{
+				background-position:2px 2px;
+			}
+			opacity:0;
+		}
+		lable{
+			position:absolute;
+			left:0;
+			top:0px;
+			background:url(../img/2.png) no-repeat 3px -20px;
+			background-size:50% 50%;
+			width:25px;
+			height:25px;
+			z-index:1;
+			img{
+				width:17px;
+				height:17px;
+			}
+		}
+	}
+}
+/*----------------------有无过敏食物------------------------*/
+
+/*------------------------不喜欢吃的食物--------------------*/
+.five{
+	.section2{
+		-webkit-flex-grow:1;
+		padding-top:44px;
+		background:url("../img/img1.png") no-repeat;
+		background-size:100% 100%;
+		display:-webkit-flex;
+		-webkit-flex-direction:column;
+		.smallbox{
+			-webkit-flex-grow:1;
+			padding-top:10%;
+			padding-left:5%;
+			background:url("../img/1.png") 20% 30% no-repeat;
+			background-size:90% 80%;
+			position:relative;
+			h2{
+				font-size:16px;
+				color:$h_color;
+				width:100%;
+				text-align:center;
+				padding-top:29px;
+			}
+			ul{
+				width:70%;
+				margin-top:19px;
+				height:198px;
+				margin-left:10%;
+					li{
+						list-style:none;		
+						font-size:11px;
+						color:$h-small;
+						border:1px solid #666666;
+						border-radius:3px;				
+						line-height:20px;
+						text-align:center;
+						float:left;
+						width:20%;
+						height:20px;
+						margin-bottom:5%;
+						margin-top:5%;
+						margin-left:5%;
+						&.bg{
+								background:#F6514B;
+								color:#fff;
+								border:none;
+						}
+					}
+				
+				/*li{
+					width:50%;
+					float:left;
+					text-align:center;
+					.inp{
+						color:$title_color;
+						@include pos(relative);
+						label{
+							@include pos();
+							left:55px;
+							top:13px;
+							width:12px;
+							height:12px;
+							border:1px solid #000;
+						}
+						.bg{
+							background:url('../img/img.png') no-repeat;
+							background-position:1px;
+
+						}
+						input{
+							opacity: 0;
+							z-index:9;
+							&:checked+label{
+								background:url('../img/img.png') no-repeat center;
+							}
+						}
+						span{
+							height:40px;
+							line-height:40px;
+
+						}
+					}
+				}*/
+			}
+			.jixu{
+				width:110px;
+				height:38px;
+				position:absolute;
+				right:33%;
+				bottom:25%;
+				background:url("../img/img8.png") no-repeat;
+				span{
+					font-size:16px;
+					width:100%;
+					display:block;
+					text-align:center;
+					padding-top:12px;
+					color:#c65726;
+					font-weight:700;
+				}
+			}
+		}
+	}
+}
+/*----------------------60道题------------------------*/
+.six{
+	width:100%;
+	height:100%;
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+	background:#f6514b;
+	.header{
+		height:45px;
+		width:100%;
+		background:#fff;	
+		line-height:45px;
+		h1{
+			width:100%;
+			font-size:16px;
+			text-align:center;
+			position:relative;
+			span{
+				position:absolute;
+				background:url(../img/03.jpg) no-repeat;
+				background-size:contain;
+				width:20px;
+				left:15px;
+				top:14px;
+				display:inline-block;
+				height:20px;
+			}
+		}
+	}
+	.section{
+		width:90%;
+		margin:30px auto;
+		background:url(../img/pic11-1.png) no-repeat;
+		background-size:cover;
+		-webkit-flex-grow:1;
+		overflow-y:auto;
+		height:0;
+		ul{
+			
+			width:95%;
+			margin:20px auto;
+			padding-left:10px;
+			li{
+				//height:30px;
+				line-height:30px;
+				list-style:none;
+			}
+			li:nth-of-type(2n-1){
+				padding-top:2px;
+				color:#454545;
+				font-size:14px;
+				font-weight:600;
+				span{
+					width:10px;
+					margin:0 3px 0 0px;
+					height:10px;
+					background:url(../img/pic12-1.png) no-repeat;
+					background-size:contain;
+					display:inline-block;
+				}
+			}
+			li:nth-of-type(2n){
+				color:#959180;
+				font-size:12px;
+				span{
+					border:1px solid #959180;
+					margin:0 6px;
+					padding:3px 6px;
+					border-radius:3px;
+					&.on{
+						color:#fff;
+						background:#f6514b;
+						border:none;
+					}
+				}
+				
+			}
+		}
+		p{
+			width:30%;
+			margin:0 auto;
+			height:32px;
+			background:url(../img/img8.png) no-repeat;
+			background-size:contain;
+			padding:0 0 15px 15px;
+			line-height:32px;
+			color:#fff;
+
+		}
+	}
+	.jixu{
+		width:110px;
+		height:38px;
+		margin-left:30%;
+		background:url("../img/img8.png") no-repeat;
+		a{
+			font-size:16px;
+			width:100%;
+			display:block;
+			text-align:center;
+			padding-top:12px;
+			color:#c65726;
+			font-weight:700;
+		}
+	}
+}
+/*----------------------结果------------------------*/
+
+	.result-container{
+		width:100%;
+		height:100%;
+		display:-webkit-flex;
+		-webkit-flex-direction:column;	
+		.result-header{
+			height:45px;
+			width:100%;
+			background:#fff;	
+			line-height:45px;
+			h1{
+				width:100%;
+				font-size:16px;
+				text-align:center;
+				position:relative;
+				span{
+					position:absolute;
+					background:url(../img/03.jpg) no-repeat;
+					background-size:contain;
+					width:20px;
+					left:15px;
+					top:15px;
+					display:inline-block;
+					height:20px;
+				}
+			}
+			
+		}
+		.result-section{
+			width:100%;
+			margin:0px auto;		
+			-webkit-flex-grow:1;
+			overflow-y:auto;
+			.hide-h{
+				width:100%;
+				height:60px;
+				display:none;
+				line-height:60px;
+				background:#f6514b;
+				text-align:center;
+				color:#fff;
+				position:relative;
+				font-size:16px;
+				span{
+					width:8px;
+					height:8px;
+					border-bottom:8px solid #fff;
+					border-left:8px solid transparent;
+					border-right:8px solid transparent;
+					position:absolute;
+					bottom:-1px;
+					left:48%;
+
+				}
+				.tab-btn{
+					width:8px;
+					height:8px;
+					border-top:8px solid #fff;
+					border-left:8px solid transparent;
+					border-right:8px solid transparent;
+					position:absolute;
+					bottom:-1px;
+					left:48%;
+				}
+			}
+			.show-h{
+				width:100%;
+				background:#f6514b;
+				height:80px;
+				color:#fff;
+				line-height:20px;
+				padding:20px 0 0 20px;
+				span{
+					font-size:16px;
+				}
+				i{
+					background:url(../img/5.jpg) no-repeat;
+					background-size:contain;
+					width:33px;
+					height:33px;
+					display:inline-block;
+					float:right;
+					margin-top:-5px;
+
+				}
+			}
+			.hide{
+				width:100%;
+				display:none;
+				ol{
+				
+					width:90%;
+					padding-top:10px;
+					margin:0 auto;
+					li{
+						line-height:25px;
+						font-size:12px;
+					}
+				}
+				ul{
+					width:90%;
+					margin:10px auto;
+					
+					li{
+						line-height:25px;
+						font-size:12px;
+						span{
+							width:5px;
+							height:5px;
+							border-radius:50%;
+							background:#000;
+							display:inline-block;
+							margin:0 5px 0 0px;
+						}
+						
+					}
+					li:nth-of-type(1){
+						line-height:30px;
+						font-size:14px;
+						font-weight:600;
+						span{
+							width:10px;
+							margin:0 5px 0 0px;
+							height:10px;
+							background:url(../img/pic12-1.png) no-repeat;
+							background-size:contain;
+							display:inline-block;
+
+						}
+					}
+				}
+			}
+			.eat{
+				margin-top:2px;
+				width:100%;
+				overflow-y:auto;
+				background:#fbfbfb;
+				h6{
+					height:60px;
+					line-height:60px;
+					color:#f6514b;
+					font-size:16px;
+					padding:0 20px;
+					border:1px solid #eee;
+					span{
+						background:url(../img/pic16-1.png) no-repeat;
+						background-size:contain;
+						width:20px;
+						height:20px;
+						display:inline-block;
+						float:right;
+						margin-top:20px;
+					}
+				}
+				.pic{
+					width:90%;
+					margin:10px auto;
+					display:-webkit-flex;
+					display:none;
+					dl{
+						-webkit-flex-grow:1;
+						background:#fbfbfb;
+						margin-right:2px;
+						color:#333;
+						dt{
+							img{
+								width:100%;
+							}
+						}
+						dd{
+							text-align:center;
+							font-size:12px;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+/*--------弹出框-------*/
+.dialog{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+	.box{
+		position:absolute;
+		background:white;
+		width:80%;
+		height:60%;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		margin:auto;
+		.top{
+			height:80%;
+			background:#FFF3BF;
+			line-height:30px;
+			position:relative;
+			span{
+				font-size:0;
+				&:nth-child(1){
+					width:120px;
+					height:120px;
+					position:absolute;
+					left:0;
+					right:0;
+					margin:0 auto;
+					top:40px;
+					background:url('../img/img2.png') no-repeat center ;
+					background-size:100%;
+					z-index:1;
+				}
+				&:nth-child(2){
+					width:120px;
+					height:30px;
+					position:absolute;
+					left:20px;
+					top:40px;
+					background:url('../img/img9.png') no-repeat center ;
+					background-size:100%;
+				}
+				&:nth-child(3){
+					width:80px;
+					height:40px;
+					position:absolute;
+					right:20px;
+					top:80px;
+					background:url('../img/img10.png') no-repeat center ;
+					background-size:100%;
+				}
+			}
+			h3{
+				width:100%;
+				height:100px;
+				position:absolute;
+				left:0;
+				right:0;
+				margin:0 auto;
+				padding:0 30px;
+				bottom:10px;
+			}
+		}
+		p{
+			height:20%;
+			background:#FAEAA4;
+			position:relative;
+			a{
+				position:absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				margin:auto;
+				width:50%;
+				height:50px;
+				background:url('../img/img8.png') no-repeat;
+				background-size:100%;
+				text-align:center;
+				line-height:50px;
+				color:#B10A02;
+				font-size:20px;
+				font-weight:bold;
+				color:#c65726;
+				font-weight:700;
+			}
+		}
+	}
+}

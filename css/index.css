@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+li {
+  list-style: none; }
+
+a {
+  text-direction: none; }
+
+.header {
+  height: 50px;
+  background: #000;
+  color: white; }
+
+.dialog {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .dialog .box {
+    position: absolute;
+    background: white;
+    width: 80%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    .dialog .box .top {
+      height: 80%;
+      background: #FFF3BF;
+      line-height: 30px;
+      position: relative; }
+      .dialog .box .top span {
+        font-size: 0; }
+        .dialog .box .top span:nth-child(1) {
+          width: 120px;
+          height: 120px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          top: 40px;
+          background: url("../img/img2.png") no-repeat center;
+          background-size: 100%;
+          z-index: 1; }
+        .dialog .box .top span:nth-child(2) {
+          width: 120px;
+          height: 30px;
+          position: absolute;
+          left: 20px;
+          top: 40px;
+          background: url("../img/img9.png") no-repeat center;
+          background-size: 100%; }
+        .dialog .box .top span:nth-child(3) {
+          width: 80px;
+          height: 40px;
+          position: absolute;
+          right: 20px;
+          top: 80px;
+          background: url("../img/img10.png") no-repeat center;
+          background-size: 100%; }
+      .dialog .box .top h3 {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 0 30px;
+        bottom: 10px; }
+    .dialog .box p {
+      height: 20%;
+      background: #FAEAA4;
+      position: relative; }
+      .dialog .box p span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 50%;
+        height: 50px;
+        background: url("../img/img8.png") no-repeat;
+        background-size: 100%;
+        text-align: center;
+        line-height: 50px;
+        color: #B10A02;
+        font-size: 20px;
+        font-weight: bold; }
+
+/*# sourceMappingURL=index.css.map */
